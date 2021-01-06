@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://addpdffrongenerator/locale/overlay.dtd">
+
+<overlay id="addpdffromgenerator-overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<!-- addpdffromgenerator context menus -->
+	<menupopup id="addpdffromgenerator-itemmenu">
+		<menuseparator id="id-addpdffromgenerator-separator"/>
+		<!-- Make sure the menu separator for utilities is visible -->
+       	<!--insertafter="id-zotfile-menu" -->
+       	<menuitem id="id-addpdffromgenerator-generate-pdf" label="&addpdffromgenerator-generate-pdf.label;" tooltiptext="&addpdffromgenerator-generate-pdf.tooltiptext;" oncommand="var parentItemId = parseInt(this.parentNode.parentNode.parentNode.getAttribute('itemId')); Zotero.AddPdfFromGenerator.addGeneratedPdf(parentItemId)"/>
+	</menupopup>
+
+	<!-- Include the main extension logic -->
+	<script src="chrome://zotero/content/include.js"/>
+	<script src="chrome://addpdffromgenerator/content/include.js"/>
+
+</overlay>

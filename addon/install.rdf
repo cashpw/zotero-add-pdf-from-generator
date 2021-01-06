@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+        <em:id>cashbweaver@gmail.com</em:id>
+        <em:name>Add PDF From Generator</em:name>
+        <em:version>0.0.1</em:version>
+        <em:multiprocessCompatible>true</em:multiprocessCompatible>
+
+        <em:localized>
+            <Description>
+                <em:locale>en-US</em:locale>
+                <em:name>Add PDF From Generator</em:name>
+                <em:description>A utility for adding PDF attachments from a generator URL.</em:description>
+            </Description>
+        </em:localized>
+
+        <em:creator>Cash Weaver</em:creator>
+        <em:optionsURL>chrome://addpdffromgenerator/content/options.xul</em:optionsURL>
+        <em:type>2</em:type> <!-- type=extension -->
+
+        <!-- Or requires Zotero Standalone -->
+        <em:targetApplication>
+            <Description>
+                <em:id>zotero@chnm.gmu.edu</em:id>
+                <em:minVersion>5.0.0</em:minVersion>
+                <em:maxVersion>*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+    </Description>
+</RDF>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://zotero-platform/content/preferences.css"?>
+
+<!DOCTYPE window SYSTEM "chrome://addpdffromgenerator/locale/options.dtd">
+
+<prefwindow id="addpdffromgenerator-perf" title="&addpdffromgenerator-preferences;" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="updatePreferenceWindow('all');">
+		<prefpane label="&addpdffromgenerator-prefpane;" id="addpdffromgenerator-perfpane">
+			<preferences>
+				<preference id="pref-addpdffromgenerator-generator-url" name="extensions.addpdffromgenerator.generator_url" type="string"/>
+			</preferences>
+
+			<tabbox id="addpdffromgenerator-tabbox">
+				<tabs id="addpdffromgenerator-tabs">
+					<tab label="&general-settings;"/>
+				</tabs>
+
+				<tabpanels id="addpdffromgenerator-tabpanels">
+				    <!-- GENERAL SETTINGS -->
+					<tabpanel orient="vertical">
+			            <label id="id-addpdffromgenerator-generator-url-label" value="&addpdffromgenerator.pref.generatorurl.label;"/>
+			            <textbox id="id-addpdffromgenerator-generator-url" preference="pref-addpdffromgenerator-generator-url"/>
+					</tabpanel>
+				</tabpanels>
+			</tabbox>
+		</prefpane>
+
+		<script src="options.js"/>
+		<script src="chrome://zotero/content/include.js"/>
+		<script src="chrome://addpdffromgenerator/content/include.js"/>
+
+</prefwindow>
